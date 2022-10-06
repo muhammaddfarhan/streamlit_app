@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
+import plotly.express as px 
 st.set_page_config(page_title="Dashboard", page_icon=":bar_chart:", layout="wide")
 
 st.markdown("<h1 style='text-align: center; color: Black; '><u>Toyota Monthly Report</u></h1>", unsafe_allow_html=True )
@@ -138,11 +138,11 @@ with st.container():
     col2 , col3= st.columns(2)
     with col2:
         st.write("<h5 style='text-align: center; color: Black;'>CONNECT ACTIVATION (JULY - SEPTEMBER)</h5>", unsafe_allow_html=True)
-        st.write("<p style='text-align: center; color: Black;'>616</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center; color: Black;font-size:1.5vw'>616</p>", unsafe_allow_html=True)
     with col3:
         st.write("<h5 style='text-align: center; color: Black;'>CONNECT ACTIVATION (SEPTEMBER)</h5>", unsafe_allow_html=True)
-        st.write("<p style='text-align: center; color: Black;'>178</p>", unsafe_allow_html=True)
-
+        st.write("<p style='text-align: center; color: Black;font-size:1.5vw'>178</p>", unsafe_allow_html=True)
+    st.write('\n')
 st.markdown("<h2 style='text-align: center; color: White;background-color:#094099 '>FIRST FREE SERVICE</h2>", unsafe_allow_html=True )
 
 with st.container():
@@ -180,3 +180,167 @@ with st.container():
         columns=["a"])
     
         st.bar_chart(chart_data)      
+    
+st.markdown("<h2 style='text-align: center; color: White;background-color:#094099 '>VEHICLE ANNIVERSARY</h2>", unsafe_allow_html=True )
+
+with st.container():
+    st.write('\n')
+    col2 , col3= st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: left; color: Black;'>TEXT MESSAGE SENT: <span style='font-weight:normal'>238</span></h5>", unsafe_allow_html=True)
+    with col3:
+        st.write("<h5 style='text-align: right; color: Black;'>CUSTOMERS ENGAGED:  <span style='font-weight:normal'>98</span></h5>", unsafe_allow_html=True)
+   
+with st.container():
+    st.write('\n')
+    st.write('\n')
+    col2 , col3= st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: center; color: Black;'>VERIFICATION</h5>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center; color: Black;font-size:1.5vw'>616</p>", unsafe_allow_html=True)
+    with col3:
+        st.write("<h5 style='text-align: center; color: Black;'>ACTIVATION</h5>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center; color: Black;font-size:1.5vw'>178</p>", unsafe_allow_html=True)
+    st.write('\n')
+
+
+with st.container():
+    col1 ,col2  = st.columns(2)
+    with col1:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>AVAILED OR NOT</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        df = pd.DataFrame()
+        df['total_bill'] = [20.42,13.54,25.43,22,10]
+        df['day'] = ['Sun' , 'Mon' , 'Sat' , 'Fri' , 'Thurs']
+        
+        fig=px.bar(df,x='total_bill',y='day', orientation='h')
+        st.write(fig)
+
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>SERVICE EXPERIENCE</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,10),
+        columns=["a"])
+        st.bar_chart(chart_data)      
+
+st.markdown("<h2 style='text-align: center; color: White;background-color:#094099 '>PROTECTION PLAN</h2>", unsafe_allow_html=True )
+
+with st.container():
+    st.write('\n')
+    col2 , col3= st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: left; color: Black;'>TEXT MESSAGE SENT: <span style='font-weight:normal'>4415</span></h5>", unsafe_allow_html=True)
+    with col3:
+        st.write("<h5 style='text-align: right; color: Black;'>CUSTOMERS ENGAGED:  <span style='font-weight:normal'>1264</span></h5>", unsafe_allow_html=True)
+
+st.markdown("<h2 style='text-align: center; color: #094099;background-color: '><U>INTERESTED TO BUY</U></h2>", unsafe_allow_html=True )
+
+with st.container():
+    st.write('\n')
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>INTERESTED TO BUY</h5>", unsafe_allow_html=True)
+        labels = 'Yes', 'No'
+        sizes = [7, 5]
+        explode = (0, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
+        
+        fig1, ax1 = plt.subplots(figsize=(5, 2))
+        ax1.pie(sizes, labels=labels, autopct='%1.1f%%' , shadow = True , explode=explode)
+        ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+        
+        st.pyplot(fig1)
+        
+    with col3:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>VARIANT</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,5),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+    
+
+with st.container():
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>DELARSHIP</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,8),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+    with col3:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>CITY</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,5),
+        columns=["a"])
+    
+        st.bar_chart(chart_data) 
+        
+
+st.markdown("<h2 style='text-align: center; color: #094099;background-color: '><U>INTERESTED TO OFFER</U></h2>", unsafe_allow_html=True )
+
+with st.container():
+    st.write('\n')
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>INTERESTED TO OFFER</h5>", unsafe_allow_html=True)
+        labels = 'Yes', 'No'
+        sizes = [8, 4]
+        explode = (0, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
+        
+        fig1, ax1 = plt.subplots(figsize=(5, 2))
+        ax1.pie(sizes, labels=labels, autopct='%1.1f%%' , shadow = True , explode=explode)
+        ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+        
+        st.pyplot(fig1)
+        
+    with col3:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>VARIANT</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,5),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+    
+
+with st.container():
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>DELARSHIP</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,8),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+    with col3:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>CITY</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,5),
+        columns=["a"])
+    
+        st.bar_chart(chart_data) 
+        
+
+st.markdown("<h2 style='text-align: center; color: #094099;background-color: '><U>DISINTERESTED TO BUYING</U></h2>", unsafe_allow_html=True )
+
+with st.container():
+    st.write('\n')
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>VARIANT</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,5),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+        
+    with col3:
+        st.write('')
