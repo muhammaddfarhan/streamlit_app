@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-st.set_page_config(page_title="Dashboard", page_icon=":bar_chart:", layout="center")
+st.set_page_config(page_title="Dashboard", page_icon=":bar_chart:", layout="centered")
 
 st.markdown("<h1 style='text-align: center; color: Black; '><u>Toyota Monthly Report</u></h1>", unsafe_allow_html=True )
 
