@@ -2,17 +2,18 @@ import streamlit as st
 import plotly.graph_objects as go
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 st.set_page_config(page_title="Dashboard", page_icon=":bar_chart:", layout="wide")
 
 st.markdown("<h1 style='text-align: center; color: Black; '><u>Toyota Monthly Report</u></h1>", unsafe_allow_html=True )
 
-import pandas as pd
+
 df = pd.read_excel('dataframe.xlsx')
 
 
 fig = go.Figure(data=[go.Table(
-    columnwidth = [400],
+    columnwidth = [250],
     header=dict(values=list(df.columns),
                 fill_color='Light Grey',
                 align='center',
