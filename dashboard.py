@@ -28,7 +28,7 @@ fig = go.Figure(data=[go.Table(
 
 with st.container():
     
-    fig.update_layout(width = 1600 , height = 480)
+    fig.update_layout(width = 1500 , height = 480)
 
     st.write(fig)
 
