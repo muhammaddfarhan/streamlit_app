@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-st.set_page_config(page_title="Dashboard", page_icon=":bar_chart:", layout="centered")
+st.set_page_config(page_title="Dashboard", page_icon=":bar_chart:", layout="wide")
 
 st.markdown("<h1 style='text-align: center; color: Black; '><u>Toyota Monthly Report</u></h1>", unsafe_allow_html=True )
 
@@ -27,12 +27,9 @@ fig = go.Figure(data=[go.Table(
 
 
 with st.container():
-    col3, col4 = st.columns(2)
-    with col3:
-        fig.update_layout(width = 1800 , height = 480)
-        st.write(fig)
-    with col4:
-        st.write('')
+    fig.update_layout(width = 1600 , height = 480)
+    st.write(fig)
+    
     
 
 with st.container():
