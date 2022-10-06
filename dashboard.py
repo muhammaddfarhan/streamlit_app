@@ -27,9 +27,7 @@ fig = go.Figure(data=[go.Table(
 
 
 with st.container():
-    col2 , col3, col4 = st.columns(3)
-    with col2:
-        st.write('')
+    col3, col4 = st.columns(2)
     with col3:
         fig.update_layout(width = 1500 , height = 480)
         st.write(fig)
