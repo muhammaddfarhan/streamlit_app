@@ -27,10 +27,15 @@ fig = go.Figure(data=[go.Table(
 
 
 with st.container():
+    col2 , col3, col4 = st.columns(3)
+    with col2:
+        st.write('')
+    with col3:
+        fig.update_layout(width = 1500 , height = 480)
+        st.write(fig)
+    with col4:
+        st.write('')
     
-    fig.update_layout(width = 1500 , height = 480)
-
-    st.write(fig)
 
 with st.container():
     col2 , col3, col4 , col5 = st.columns(4)
