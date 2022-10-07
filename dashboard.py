@@ -181,7 +181,7 @@ with st.container():
     
         st.bar_chart(chart_data)      
     
-st.markdown("<h2 style='text-align: center; color: White;background-color:#094099 '>VEHICLE ANNIVERSARY</h2>", unsafe_allow_html=True )
+st.markdown("<h2 style='text-align: center; color: White;background-color:#094099 '>WARRANTY ACTIVATION SERVICE</h2>", unsafe_allow_html=True )
 
 with st.container():
     st.write('\n')
@@ -197,13 +197,23 @@ with st.container():
     col2 , col3= st.columns(2)
     with col2:
         st.write("<h5 style='text-align: center; color: Black;'>VERIFICATION</h5>", unsafe_allow_html=True)
-        st.write("<p style='text-align: center; color: Black;font-size:1.5vw'>616</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center; color: Black;font-size:1.5vw'>98</p>", unsafe_allow_html=True)
     with col3:
         st.write("<h5 style='text-align: center; color: Black;'>ACTIVATION</h5>", unsafe_allow_html=True)
-        st.write("<p style='text-align: center; color: Black;font-size:1.5vw'>178</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: center; color: Black;font-size:1.5vw'>79</p>", unsafe_allow_html=True)
     st.write('\n')
 
 
+st.markdown("<h2 style='text-align: center; color: White;background-color:#094099 '>VEHICLE ANNIVERSARY</h2>", unsafe_allow_html=True )
+
+with st.container():
+    st.write('\n')
+    col2 , col3= st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: left; color: Black;'>TEXT MESSAGE SENT: <span style='font-weight:normal'>6425</span></h5>", unsafe_allow_html=True)
+    with col3:
+        st.write("<h5 style='text-align: right; color: Black;'>CUSTOMERS ENGAGED:  <span style='font-weight:normal'>2038</span></h5>", unsafe_allow_html=True)
+   
 with st.container():
     col1 ,col2  = st.columns(2)
     with col1:
@@ -342,5 +352,114 @@ with st.container():
     
         st.bar_chart(chart_data)
         
+    with col3:
+        st.write('')
+        
+
+st.markdown("<h2 style='text-align: center; color:WHITE;background-color: #094099 '>LAUNCH OF FORTUNER 2022</h2>", unsafe_allow_html=True )
+with st.container():
+    st.write('\n')
+    col2 , col3= st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: left; color: Black;'>TEXT MESSAGE SENT: <span style='font-weight:normal'>14</span></h5>", unsafe_allow_html=True)
+    with col3:
+        st.write("<h5 style='text-align: right; color: Black;'>CUSTOMERS ENGAGED:  <span style='font-weight:normal'>5</span></h5>", unsafe_allow_html=True)
+with st.container():
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>VARIANT</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,1),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+    with col3:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>DEALERSHIP</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,1),
+        columns=["a"])
+    
+        st.bar_chart(chart_data) 
+
+with st.container():
+    st.write('\n')
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>CITY</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,1),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+        
+    with col3:
+        st.write('')
+        
+        
+        
+st.markdown("<h2 style='text-align: center; color:WHITE;background-color: #094099 '>LAUNCH OF REVO 2022</h2>", unsafe_allow_html=True )
+with st.container():
+    st.write('\n')
+    col2 , col3= st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: left; color: Black;'>TEXT MESSAGE SENT: <span style='font-weight:normal'>29</span></h5>", unsafe_allow_html=True)
+    with col3:
+        st.write("<h5 style='text-align: right; color: Black;'>CUSTOMERS ENGAGED:  <span style='font-weight:normal'>4</span></h5>", unsafe_allow_html=True)
+
+with st.container():
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>VARIANT</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,1),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+    with col3:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>DEALERSHIP</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,1),
+        columns=["a"])
+    
+        st.bar_chart(chart_data) 
+
+with st.container():
+    st.write('\n')
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: CENTER; color: Black;'>CITY</h5>", unsafe_allow_html=True)
+        st.write('\n\n\n')
+        chart_data = pd.DataFrame(
+        np.random.normal(5,1,1),
+        columns=["a"])
+    
+        st.bar_chart(chart_data)
+        
+    with col3:
+        st.write('')
+
+st.markdown("<h1 style='text-align: center; color: White;background-color:Black '>MARKETING CAMPAIGNS</h1>", unsafe_allow_html=True )
+
+with st.container():
+    st.write('\n')
+    st.write('\n')
+    col2 , col3 = st.columns(2)
+    with col2:
+        st.write("<h5 style='text-align: left; color: Black;'>Date: 03/08/2022</h5>", unsafe_allow_html=True)
+        st.write("<h5 style='text-align: CENTER; color: Black;'><u>Toyota Customer Refund</u></h5>", unsafe_allow_html=True)
+        st.write('\n')
+        st.write('\n')
+        st.write("<p style='text-align: CENTER; color: Black;'>ENGAGEMENTS</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: CENTER; color: Black;'>17</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: CENTER; color: Black;'>ACTIVE TALKERS</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: CENTER; color: Black;'>3</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: CENTER; color: Black;'>TALKERS REACHED</p>", unsafe_allow_html=True)
+        st.write("<p style='text-align: CENTER; color: Black;'>167</p>", unsafe_allow_html=True)
+        st.write("<h5 style='text-align: CENTER; color: Black;'>TEXT MESSAGE SENT: <span style='font-weight:normal'>343</span></h5>", unsafe_allow_html=True)
     with col3:
         st.write('')
