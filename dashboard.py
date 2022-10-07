@@ -13,7 +13,6 @@ df = pd.read_excel('dataframe.xlsx')
 
 
 fig = go.Figure(data=[go.Table(
-    columnwidth = [250],
     header=dict(values=list(df.columns),
                 fill_color='Light Grey',
                 align='center',
